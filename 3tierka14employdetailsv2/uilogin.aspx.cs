@@ -23,7 +23,7 @@ namespace _3tierka14employdetailsv2
 
         protected void btnlogin_Click(object sender, EventArgs e)
         {
-            objBAL.id = Convert.ToInt32(txtid.Text.Trim());
+            objBAL.id = Convert.ToString( txtid.Text.Trim());
 
             string valid = txtpswd.Text.Trim();
 

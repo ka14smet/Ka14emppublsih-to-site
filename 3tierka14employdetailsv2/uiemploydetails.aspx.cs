@@ -25,23 +25,39 @@ namespace _3tierka14employdetailsv2
 
                     
                     //Session.Timeout{ }
-                    int emplyid = Convert.ToInt32(Session["id"]);
+                    string emplyid = Convert.ToString(Session["id"]);
                     balClass1 objBAL = new balClass1();
                     objBAL.id = emplyid;
                     DataSet ds = new DataSet();
                     ds = objBLL.getdata(objBAL);
-                    GridView1.DataSource = ds.Tables[0];
-                    GridView1.DataBind();
-                    GridView2.DataSource = ds.Tables[1];
-                    GridView2.DataBind();
+                    //GridView1.DataSource = ds.Tables[0];
+                    //GridView1.DataBind();
+                    //GridView2.DataSource = ds.Tables[1];
+                    //GridView2.DataBind();
                     lbltime.Text = DateTime.Now.ToString();
-                    lblid.Text =("EMPLOYEE ID : Ka14"+emplyid.ToString());
                     DataRow r = ds.Tables[0].Rows[0];
-                    string name = r.Field<string>(1);
-                    lblname.Text =("EMPLOYEE NAME:" +name);
+                    lblid.Text = emplyid.ToString();
+                    lblname.Text = r.Field<string>(2);
+                    lbldesgn.Text = r.Field<string>(11);
+                    lblid1.Text = r.Field<string>(1);
+                    lblname1.Text = r.Field<string>(2);
+                    lbldob.Text = r.Field<string>(3);
+                    lblgender.Text = r.Field<string>(4);
+                    lblbldgrp.Text = r.Field<string>(5);
+                    lblmobno1.Text = r.Field<string>(6);
+                    lblmobno2.Text = r.Field<string>(7);
+                    lblmail.Text = r.Field<string>(8);
+                    lbladrs.Text = r.Field<string>(9);
+                    lblqal.Text = r.Field<string>(10);
+                    lbldes.Text = r.Field<string>(11);
+                    DataRow r2 = ds.Tables[1].Rows[0];
+                    lblprj.Text = r2.Field<string>(0);
+                    lblwrkstrt.Text = r2.Field<string>(1);
+                    lblwrkcmplt.Text= r2.Field<string>(2);
+                    lbltraining.Text= r2.Field<string>(3);
 
-                   
-                    
+
+
                 }
                 catch (Exception ex)
                 {

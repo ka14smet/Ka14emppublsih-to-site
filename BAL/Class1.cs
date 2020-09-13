@@ -8,6 +8,6 @@ namespace BAL
 {
     public class balClass1
     {
-        public int id { get; set; }
+        public string id { get; set; }
     }
 }
