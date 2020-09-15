@@ -31,6 +31,15 @@ namespace _3tierka14employdetailsv2 {
         protected global::System.Web.UI.WebControls.TextBox txtid;
         
         /// <summary>
+        /// rfvEmpName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmpName;
+        
+        /// <summary>
         /// txtpswd control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace _3tierka14employdetailsv2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtpswd;
+        
+        /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
         /// btnlogin control.
